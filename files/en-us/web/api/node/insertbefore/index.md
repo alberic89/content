@@ -53,7 +53,12 @@ in which case the empty {{domxref("DocumentFragment")}} is returned).
 
 ### Exceptions
 
-Pre-insert validity
+- `HierarchyRequestError` {{domxref("DOMException")}}
+  - : Thrown when the constraints of the DOM tree are violated.:
+- `NotFoundError` {{domxref("DOMException")}}
+  - : Thrown when the `referenceNode` is non-null but not a child of the parent node.:
+
+You can read [the full algorithm](https://dom.spec.whatwg.org/#concept-node-ensure-pre-insertion-validity).
 
 ## Example
 
